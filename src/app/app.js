@@ -10,11 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var angular2_1 = require('angular2/angular2');
 var AppComponent = (function () {
     function AppComponent() {
+        this.second = 'second';
     }
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app',
-            template: '<h1> My First Angular 2 App</h2>'
+            template: "\n    <h1>{{second}}</h1>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

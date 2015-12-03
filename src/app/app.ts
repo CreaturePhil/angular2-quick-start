@@ -2,8 +2,12 @@ import {bootstrap, Component} from 'angular2/angular2';
 
 @Component({
   selector: 'my-app',
-  template: '<h1> My First Angular 2 App</h2>'
+  template: `
+    <h1>{{second}}</h1>
+  `
 })
-class AppComponent {  }
+class AppComponent {
+  public second: string = 'second';
+}
 
 bootstrap(AppComponent);
